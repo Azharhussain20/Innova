@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1645A6A5-C00F-4D66-83C0-BD792829C494"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8995AB66-20CB-4BE8-88E9-ABD34B4A97F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "goToLoginScreenPage(transition:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5EEC12D-13F5-4842-92B7-06792B8E7C5B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Helper/Extensions/GlobalExtensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "applyStyle(labelFont:textColor:cornerRadius:backgroundColor:borderColor:borderWidth:alignment:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E5EEC12D-13F5-4842-92B7-06792B8E7C5B - 53dbbe7b136b950b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UILabel.applyStyle(labelFont: Swift.Optional&lt;__C.UIFont&gt;, textColor: Swift.Optional&lt;__C.UIColor&gt;, cornerRadius: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, backgroundColor: Swift.Optional&lt;__C.UIColor&gt;, borderColor: Swift.Optional&lt;__C.UIColor&gt;, borderWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: __C.NSTextAlignment) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Helper/Extensions/GlobalExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "1764">
+               </Location>
+               <Location
+                  uuid = "E5EEC12D-13F5-4842-92B7-06792B8E7C5B - 53dbbe7b136b950b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UILabel.applyStyle(labelFont: Swift.Optional&lt;__C.UIFont&gt;, textColor: Swift.Optional&lt;__C.UIColor&gt;, cornerRadius: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, backgroundColor: Swift.Optional&lt;__C.UIColor&gt;, borderColor: Swift.Optional&lt;__C.UIColor&gt;, borderWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: __C.NSTextAlignment) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Helper/Extensions/GlobalExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "1828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC488716-BAA0-4E7B-B6D4-83FE5A73791B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A0A7D79-6B04-4080-8FC4-C39B67D2B5A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "RegisterViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3A0A7D79-6B04-4080-8FC4-C39B67D2B5A1 - a8eefdc9b73bc2f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1444">
+               </Location>
+               <Location
+                  uuid = "3A0A7D79-6B04-4080-8FC4-C39B67D2B5A1 - a8eefdc9b73bc2f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C56FAA6-362C-4BEE-B999-962D2672BAFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C56FAA6-362C-4BEE-B999-962D2672BAFD - a8eefdc9b73bfd49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "2860">
+               </Location>
+               <Location
+                  uuid = "4C56FAA6-362C-4BEE-B999-962D2672BAFD - a8eefdc9b73bfd49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "2476">
+               </Location>
+               <Location
+                  uuid = "4C56FAA6-362C-4BEE-B999-962D2672BAFD - a8eefdc9b73bfdcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1960">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAFE8BA9-DADA-4E8B-8978-3141964E70E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA9A6213-7BE8-454B-B5FB-FABDF32888A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BA9A6213-7BE8-454B-B5FB-FABDF32888A8 - a8eefdc9b73bc293"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1960">
+               </Location>
+               <Location
+                  uuid = "BA9A6213-7BE8-454B-B5FB-FABDF32888A8 - a8eefdc9b73bc2b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "BA9A6213-7BE8-454B-B5FB-FABDF32888A8 - a8eefdc9b73bc317"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
