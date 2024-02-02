@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8995AB66-20CB-4BE8-88E9-ABD34B4A97F8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Innova/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "goToLoginScreenPage(transition:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E5EEC12D-13F5-4842-92B7-06792B8E7C5B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -63,6 +47,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "183"
                   endingLineNumber = "183"
+                  offsetFromSymbolStart = "1828">
+               </Location>
+               <Location
+                  uuid = "E5EEC12D-13F5-4842-92B7-06792B8E7C5B - 53dbbe7b136b9002"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UILabel.applyStyle(labelFont: Swift.Optional&lt;__C.UIFont&gt;, textColor: Swift.Optional&lt;__C.UIColor&gt;, cornerRadius: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, backgroundColor: Swift.Optional&lt;__C.UIColor&gt;, borderColor: Swift.Optional&lt;__C.UIColor&gt;, borderWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: __C.NSTextAlignment) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Helper/Extensions/GlobalExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
                   offsetFromSymbolStart = "1828">
                </Location>
             </Locations>
@@ -270,6 +269,101 @@
                   startingLineNumber = "55"
                   endingLineNumber = "55"
                   offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2981C291-1565-49C5-B1E2-108AEA3EE95A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/Dashboard/Cell/DashboardTableCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9043C104-C31A-47D2-9CAA-EB124103A72A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "tableView(_:itemsForBeginning:at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84C07086-EECB-462A-A528-A2EDFB8ECEFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "84C07086-EECB-462A-A528-A2EDFB8ECEFD - 9c15f0d1ad9117e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RearrangeRoomViewController.tableView(_: __C.UITableView, moveRowAt: Foundation.IndexPath, to: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "740">
+               </Location>
+               <Location
+                  uuid = "84C07086-EECB-462A-A528-A2EDFB8ECEFD - 9c15f0d1ad911764"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RearrangeRoomViewController.tableView(_: __C.UITableView, moveRowAt: Foundation.IndexPath, to: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "84C07086-EECB-462A-A528-A2EDFB8ECEFD - 9c15f0d1ad911747"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RearrangeRoomViewController.tableView(_: __C.UITableView, moveRowAt: Foundation.IndexPath, to: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/Innova/Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "592">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -9,15 +9,26 @@ import UIKit
 
 class ActivateBluetootheController: BaseViewController {
 
+    @IBOutlet weak var btnIgnore: PlainTextButton!
+    @IBOutlet weak var btnTryAgain: GreenThemeButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configurationTitleAndBack(title: "Attivazione Bluetooth", imageName: "chevron.left")
         self.backTapped = {
             self.navigationController?.popViewController(animated: true)
         }
-        // Do any additional setup after loading the view.
+        self.btnTryAgain.touchUpInside = {
+            self.navigationController?.popViewController(animated: true)
+        }
+        self.btnTryAgain.touchUpInside = {
+            let initiliazeVC : AddDeviceViewController = Utilities.viewController(name: "AddDeviceViewController", onStoryboard: "Device") as! AddDeviceViewController
+            initiliazeVC.hidesBottomBarWhenPushed = true
+            self.navigationController!.pushViewController(initiliazeVC, animated: true)
+        }
     }
     
+
+
 
     /*
     // MARK: - Navigation

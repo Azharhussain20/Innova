@@ -521,6 +521,17 @@ extension UIButton
 
     }
 }
+extension CAGradientLayer {
+    func setGradientColors(from color1: UIColor, to color2: UIColor) {
+        colors = [color1.cgColor, color2.cgColor]
+    }
+}
+extension UIView {
+    class func fromNib<T: UIView>() -> T {
+        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+    }
+}
+
 extension UINavigationController {
     open override func awakeFromNib() {
         //self.navigationBar.prefersLargeTitles = true
@@ -546,6 +557,12 @@ extension UINavigationController {
         }
         return isPoped
     }
+    func popToViewController<T: UIViewController>(_ viewController: T.Type, animated: Bool) -> T? {
+           guard let viewController = self.viewControllers.first(where: {$0 is T}) else { return nil }
+           self.popToViewController(viewController, animated: animated)
+           
+           return viewController as? T
+       }
     func popViewControllers(viewsToPop: Int, animated: Bool = true) -> Bool
     {
         var isPoped: Bool = false
@@ -578,36 +595,36 @@ extension UINavigationBar
     }
     func setNavigation()
     {
-        if #available(iOS 13.0, *) {
-            let navBarAppearance = UINavigationBarAppearance()
-            navBarAppearance.configureWithOpaqueBackground() //configureWithOpaqueBackground()
-            navBarAppearance.titleTextAttributes = [NSAttributedString.Key.font : UIFont.applyHelveticaNeueBold(fontSize: 18) , NSAttributedString.Key.foregroundColor : appConfig.appColors.navTextTitleColor]
-            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: appConfig.appColors.navTextTitleColor]
-            navBarAppearance.backgroundColor = UIColor.white
-            
-            self.barTintColor = UIColor.white
-            
-            self.standardAppearance = navBarAppearance
-            self.scrollEdgeAppearance = navBarAppearance
-        }
-        else
-        {
-            self.barTintColor = UIColor.white
-            self.backgroundColor = UIColor.white
-            
-            self.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-            
-            self.isOpaque = true
-            self.tintColor = appConfig.appColors.navTextTitleColor
-            self.titleTextAttributes = [NSAttributedString.Key.font : UIFont.applyHelveticaNeueBold(fontSize: 18) , NSAttributedString.Key.foregroundColor : appConfig.appColors.navTextTitleColor]
-            self.layer.masksToBounds = false
-            self.layer.shadowColor = UIColor.clear.cgColor
-            self.layer.shadowOpacity = 1
-            self.layer.shadowOffset = CGSize(width: 0, height: 0)
-            self.layer.shadowRadius = 0
-            setBackgroundColor(UIColor.white)
-            shouldRemoveShadow(true)
-        }
+//        if #available(iOS 13.0, *) {
+//            let navBarAppearance = UINavigationBarAppearance()
+//            navBarAppearance.configureWithOpaqueBackground() //configureWithOpaqueBackground()
+//            navBarAppearance.titleTextAttributes = [NSAttributedString.Key.font : UIFont.applyHelveticaNeueBold(fontSize: 18) , NSAttributedString.Key.foregroundColor : appConfig.appColors.navTextTitleColor]
+//            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: appConfig.appColors.navTextTitleColor]
+//            navBarAppearance.backgroundColor = UIColor.white
+//            
+//            self.barTintColor = UIColor.white
+//            
+//            self.standardAppearance = navBarAppearance
+//            self.scrollEdgeAppearance = navBarAppearance
+//        }
+//        else
+//        {
+//            self.barTintColor = UIColor.white
+//            self.backgroundColor = UIColor.white
+//            
+//            self.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//            
+//            self.isOpaque = true
+//            self.tintColor = appConfig.appColors.navTextTitleColor
+//            self.titleTextAttributes = [NSAttributedString.Key.font : UIFont.applyHelveticaNeueBold(fontSize: 18) , NSAttributedString.Key.foregroundColor : appConfig.appColors.navTextTitleColor]
+//            self.layer.masksToBounds = false
+//            self.layer.shadowColor = UIColor.clear.cgColor
+//            self.layer.shadowOpacity = 1
+//            self.layer.shadowOffset = CGSize(width: 0, height: 0)
+//            self.layer.shadowRadius = 0
+//            setBackgroundColor(UIColor.white)
+//            shouldRemoveShadow(true)
+//        }
         //self.semanticContentAttribute = apde.isArabic() ? .forceRightToLeft : .forceLeftToRight
     }
     /*func setupNavigation()

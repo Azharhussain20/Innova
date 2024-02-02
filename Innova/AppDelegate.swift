@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         AppInstance = self
         self.window = UIWindow(frame:UIScreen.main.bounds)
-        self.goToIntroDuctionPage(transition: true)
+        self.gotoDashboard(transition: true)
         return true
     }
     //MARK: - Keyboard Init methods -
@@ -103,26 +103,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     //MARK: - Navigation methods -
-    func goHomePage(transition: Bool)
-    {
-        /*let sideMenuNavigationController = Utilities.viewController(name: "sideNavigationViewController", onStoryboard: "SideMenu")
-         let homeNavigationController = Utilities.viewController(name: "HomeNav", onStoryboard: "Home")
-         
-         let options : MVYSideMenuOptions = MVYSideMenuOptions()
-         options.bezelWidth = UIScreen.main.bounds.width;
-         options.contentViewScale = 1.0 //1.0 to disable scale
-         options.contentViewOpacity = 0.5 // 0.0 to disable opacity
-         options.animationDuration = 0.3
-         options.panFromBezel = false
-         
-         let sideMenuController = MVYSideMenuController(menuViewController: sideMenuNavigationController, contentViewController: homeNavigationController,options: options)
-         let screenSize = UIScreen.main.bounds.size
-         sideMenuController?.menuFrame = CGRect(x: 0, y: 0, width: screenSize.width - 100, height: screenSize.height)
-         
-         let transitionOption = transition ? UIViewAnimationOptions.transitionFlipFromLeft : UIViewAnimationOptions.showHideTransitionViews
-         gotoViewController(viewController: sideMenuController!, transition: transitionOption)*/
-        
-    }
     
     func goToLoginScreenPage(transition : Bool) {
         let initiliazeVC : LoginViewController = Utilities.viewController(name: "LoginViewController", onStoryboard: "Introduction") as! LoginViewController

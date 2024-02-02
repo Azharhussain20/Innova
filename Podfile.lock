@@ -141,6 +141,7 @@ PODS:
   - SwiftMessages/App (9.0.9)
   - SwiftyJSON (5.0.1)
   - TTGSnackbar (1.11.1)
+  - UIDrawer (1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -155,6 +156,7 @@ DEPENDENCIES:
   - SwiftMessages
   - SwiftyJSON
   - TTGSnackbar
+  - UIDrawer (from `https://github.com/Que20/UIDrawer.git`, tag `1.0`)
 
 SPEC REPOS:
   trunk:
@@ -186,6 +188,16 @@ SPEC REPOS:
     - SwiftyJSON
     - TTGSnackbar
 
+EXTERNAL SOURCES:
+  UIDrawer:
+    :git: https://github.com/Que20/UIDrawer.git
+    :tag: '1.0'
+
+CHECKOUT OPTIONS:
+  UIDrawer:
+    :git: https://github.com/Que20/UIDrawer.git
+    :tag: '1.0'
+
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
@@ -214,7 +226,8 @@ SPEC CHECKSUMS:
   SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TTGSnackbar: fea91c62637b5662f808a4c3b55f7631cb7e1ef7
+  UIDrawer: 1bfbc152fee69f6809a41508000cf1b9bd4b1738
 
-PODFILE CHECKSUM: a33a22e2059b4b6ffbdf491cdf3911609eeecc46
+PODFILE CHECKSUM: a2dbbd0b3ac19e636e95b61093cd95ecd8a918c7
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.15.0

@@ -22,7 +22,7 @@ class InvteByQRViewController: BaseViewController {
             type: .twoButtons(
                 button1: (
                     title: "Annulla",
-                    style: .cancel,
+                    style: .default,
                     handler: {
                         // Handle the Cancel button tap action
                         print("Annulla button tapped")

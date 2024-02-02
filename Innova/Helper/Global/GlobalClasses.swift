@@ -14,7 +14,72 @@ class BackgroundImage: UIImageView {
         //self.image = UIImage(named: "ic_MainBgImg")
     }
 }
+@IBDesignable
+class GradientView: UIView {
+    override class var layerClass: AnyClass {
+        return CAGradientLayer.self
+    }
 
+    var gradientLayer: CAGradientLayer {
+        return layer as! CAGradientLayer
+    }
+
+    @IBInspectable var startColor: UIColor = .white {
+        didSet {
+            updateGradientColors()
+        }
+    }
+
+    @IBInspectable var endColor: UIColor = .black {
+        didSet {
+            updateGradientColors()
+        }
+    }
+
+    @IBInspectable var startPoint: CGPoint = CGPoint(x: 0.5, y: 0.0) {
+        didSet {
+            updateGradientPoints()
+        }
+    }
+
+    @IBInspectable var endPoint: CGPoint = CGPoint(x: 0.5, y: 1.0) {
+        didSet {
+            updateGradientPoints()
+        }
+    }
+
+    @IBInspectable var startLocation: Double = 0.0 {
+        didSet {
+            updateGradientLocations()
+        }
+    }
+
+    @IBInspectable var endLocation: Double = 1.0 {
+        didSet {
+            updateGradientLocations()
+        }
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateGradientColors()
+        updateGradientPoints()
+        updateGradientLocations()
+    }
+
+    private func updateGradientColors() {
+        gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
+    }
+
+    private func updateGradientPoints() {
+        gradientLayer.startPoint = startPoint
+        gradientLayer.endPoint = endPoint
+    }
+
+    private func updateGradientLocations() {
+        gradientLayer.locations = [NSNumber(value: startLocation), NSNumber(value: endLocation)]
+    }
+}
 class ThemeButton : UIButton {
     
     override func awakeFromNib() {

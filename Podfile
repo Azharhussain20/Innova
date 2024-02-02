@@ -16,6 +16,13 @@ target 'Innova' do
   pod 'SwiftDate'
   pod 'Kingfisher'
   pod 'DropDown'
-  # Pods for Innova
+  pod 'UIDrawer', :git => 'https://github.com/Que20/UIDrawer.git', :tag => '1.0'
 
+end
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+    end
+  end
 end

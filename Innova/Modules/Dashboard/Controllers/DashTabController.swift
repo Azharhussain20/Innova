@@ -11,6 +11,13 @@ class DashTabController: UITabBarController {
     @IBOutlet weak var myTabBar: UITabBar?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBar.layer.cornerRadius = 15
+        self.tabBar.layer.masksToBounds = true
+        self.tabBar.layer.shadowColor = UIColor.black.cgColor
+        self.tabBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.tabBar.layer.shadowRadius = 4
+        self.tabBar.layer.shadowOpacity = 0.5
+
         self.tabBar.backgroundColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.1)
         self.setTabBarItems()
     }

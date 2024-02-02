@@ -12,11 +12,14 @@ func showAlert(title: String?, message: String?, type: AlertButtonType, viewCont
     switch type {
     case .oneButton(let title, let style, let handler):
         let action = UIAlertAction(title: title, style: style, handler: { _ in handler?() })
+        action.setValue(appConfig.appColors.themeColor, forKey: "titleTextColor")
         alertController.addAction(action)
 
     case .twoButtons(let button1, let button2):
         let action1 = UIAlertAction(title: button1.title, style: button1.style, handler: { _ in button1.handler?() })
+        action1.setValue(appConfig.appColors.btnInActiveTextColor, forKey: "titleTextColor")
         let action2 = UIAlertAction(title: button2.title, style: button2.style, handler: { _ in button2.handler?() })
+        action2.setValue(appConfig.appColors.themeColor, forKey: "titleTextColor")
         alertController.addAction(action1)
         alertController.addAction(action2)
 

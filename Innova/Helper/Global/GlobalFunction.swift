@@ -61,6 +61,7 @@ func showErrorLabelinView(isshow: Bool = true, view: UIView, Message: String)
         }
     }
 }
+
 func addMessageLabelOnView(suprView:UIView, withMessage : String)
 {
     removeAddedMessageLabel(suprView:suprView)
