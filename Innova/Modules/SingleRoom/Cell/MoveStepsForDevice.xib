@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MoveStepsForDevice" customModule="Innova" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="26"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="26"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThemeSteps" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-XR-muX">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="n9Z-oI-0Mk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6m-FE-xry">
+                        <rect key="frame" x="0.0" y="12" width="80" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.51372549020000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="D3k-XR-muX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DYo-Pg-as5"/>
+                <constraint firstItem="a6m-FE-xry" firstAttribute="top" secondItem="D3k-XR-muX" secondAttribute="bottom" constant="4" id="Ghp-ce-Si6"/>
+                <constraint firstAttribute="trailing" secondItem="a6m-FE-xry" secondAttribute="trailing" id="axC-LQ-Q0Y"/>
+                <constraint firstAttribute="trailing" secondItem="D3k-XR-muX" secondAttribute="trailing" id="dTh-nd-dSn"/>
+                <constraint firstItem="a6m-FE-xry" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gyG-lH-FTV"/>
+                <constraint firstItem="D3k-XR-muX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kDY-Nl-l7o"/>
+                <constraint firstAttribute="bottom" secondItem="a6m-FE-xry" secondAttribute="bottom" id="sh6-Ha-N6R"/>
+            </constraints>
+            <size key="customSize" width="236" height="50"/>
+            <connections>
+                <outlet property="imgSteps" destination="D3k-XR-muX" id="uyb-wM-hRu"/>
+                <outlet property="lblSteps" destination="a6m-FE-xry" id="TGT-hw-yBa"/>
+            </connections>
+            <point key="canvasLocation" x="181.67938931297709" y="17.605633802816904"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ThemeSteps" width="80" height="8"/>
+    </resources>
+</document>

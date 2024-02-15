@@ -9,6 +9,7 @@ import UIKit
 
 class DeviceCell: UITableViewCell {
 
+    @IBOutlet weak var imgForward: UIImageView!
     @IBOutlet weak var seperator: UILabel!
     @IBOutlet weak var lblDeviceType: UILabel!
     @IBOutlet weak var lblDeviceName: UILabel!

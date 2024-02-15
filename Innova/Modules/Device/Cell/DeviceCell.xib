@@ -17,23 +17,23 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeviceIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kVN-5d-qZ7">
-                        <rect key="frame" x="16" y="13.666666666666664" width="30" height="30"/>
+                        <rect key="frame" x="16" y="10.666666666666664" width="36" height="36"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="30" id="8aE-1v-Jos"/>
-                            <constraint firstAttribute="height" constant="30" id="wpe-ek-dN7"/>
+                            <constraint firstAttribute="width" constant="36" id="8aE-1v-Jos"/>
+                            <constraint firstAttribute="height" constant="36" id="wpe-ek-dN7"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MsO-KT-OGZ">
-                        <rect key="frame" x="70" y="11.333333333333332" width="212" height="34.666666666666671"/>
+                        <rect key="frame" x="68" y="11.333333333333332" width="202" height="34.666666666666671"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufQ-5N-fsq">
-                                <rect key="frame" x="0.0" y="0.0" width="212" height="18.666666666666668"/>
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="18.666666666666668"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condizionatore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17b-12-B6U">
-                                <rect key="frame" x="0.0" y="20.666666666666664" width="212" height="14"/>
+                                <rect key="frame" x="0.0" y="20.666666666666664" width="202" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.38823529411764707" green="0.396078431372549" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -42,10 +42,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </stackView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevronRightGray" translatesAutoresizingMaskIntoConstraints="NO" id="Uz6-ak-qCu">
-                        <rect key="frame" x="296" y="22" width="8" height="13"/>
+                        <rect key="frame" x="284" y="22" width="20" height="13"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="13" id="QPo-31-f98"/>
-                            <constraint firstAttribute="width" constant="8" id="TLK-Tq-bQU"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="20" id="TLK-Tq-bQU"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02F-0h-dDt">
@@ -64,7 +64,7 @@
                     <constraint firstAttribute="bottom" secondItem="02F-0h-dDt" secondAttribute="bottom" id="6vr-Xs-tQM"/>
                     <constraint firstItem="kVN-5d-qZ7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="APg-GR-xLt"/>
                     <constraint firstItem="Uz6-ak-qCu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F7L-4c-UKO"/>
-                    <constraint firstItem="MsO-KT-OGZ" firstAttribute="leading" secondItem="kVN-5d-qZ7" secondAttribute="trailing" constant="24" id="I0J-AV-ZZF"/>
+                    <constraint firstItem="MsO-KT-OGZ" firstAttribute="leading" secondItem="kVN-5d-qZ7" secondAttribute="trailing" constant="16" id="I0J-AV-ZZF"/>
                     <constraint firstItem="MsO-KT-OGZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mk1-Bt-8qs"/>
                     <constraint firstAttribute="trailing" secondItem="02F-0h-dDt" secondAttribute="trailing" id="QwQ-9R-8e3"/>
                     <constraint firstItem="02F-0h-dDt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="Xn4-jH-hJB"/>
@@ -76,6 +76,7 @@
             <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="imgDeviceIcon" destination="kVN-5d-qZ7" id="8Vr-0S-oYk"/>
+                <outlet property="imgForward" destination="Uz6-ak-qCu" id="5i8-dt-j8J"/>
                 <outlet property="lblDeviceName" destination="ufQ-5N-fsq" id="z9e-d5-Tfc"/>
                 <outlet property="lblDeviceType" destination="17b-12-B6U" id="2Ya-Xp-Hks"/>
                 <outlet property="seperator" destination="02F-0h-dDt" id="wyS-9j-aN4"/>

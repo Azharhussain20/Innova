@@ -17,7 +17,9 @@ target 'Innova' do
   pod 'Kingfisher'
   pod 'DropDown'
   pod 'UIDrawer', :git => 'https://github.com/Que20/UIDrawer.git', :tag => '1.0'
-
+  pod "Apollo"
+  pod "Apollo/SQLite"
+  pod "Apollo/WebSocket"
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|

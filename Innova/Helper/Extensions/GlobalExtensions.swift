@@ -460,24 +460,24 @@ extension UIButton
         }
     }
     
-    @IBInspectable var isActive : Bool {
-        set(value){ if value {
-            guard let superView = self.superview else{return}
-            self.isEnabled = true
-            superView.backgroundColor = appConfig.appColors.btnActiveView
-            self.setTitleColor(UIColor.white, for: .normal)
-        }
-        else {
-            guard let superView = self.superview else{return}
-            self.isEnabled = false
-            superView.backgroundColor = appConfig.appColors.btnInActiveView
-            self.setTitleColor(appConfig.appColors.btnInActiveTextColor, for: .normal)
-            superView.borderWidth = 1
-            superView.borderColor = appConfig.appColors.btnInActiveViewBorderColor
-        }
-        }
-        get {return self.isEnabled}
-    }
+//    @IBInspectable var isActive : Bool {
+//        set(value){ if value {
+//            guard let superView = self.superview else{return}
+//            self.isEnabled = true
+//            superView.backgroundColor = appConfig.appColors.btnActiveView
+//            self.setTitleColor(UIColor.white, for: .normal)
+//        }
+//        else {
+//            guard let superView = self.superview else{return}
+//            self.isEnabled = false
+//            superView.backgroundColor = appConfig.appColors.btnInActiveView
+//            self.setTitleColor(appConfig.appColors.btnInActiveTextColor, for: .normal)
+//            superView.borderWidth = 1
+//            superView.borderColor = appConfig.appColors.btnInActiveViewBorderColor
+//        }
+//        }
+//        get {return self.isEnabled}
+//    }
     
     func pulseAnimation()
     {

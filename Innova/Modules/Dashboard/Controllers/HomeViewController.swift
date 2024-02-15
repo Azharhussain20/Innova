@@ -8,19 +8,20 @@
 import UIKit
 import DropDown
 import UIDrawer
-struct Services {
-    let sectionName: String
-    let sectionData: [ServiceObject]
-}
-struct ServiceObject {
-    let temperature: String
-    let deviceName: String
-    let roomName: String
-    let isEnable: Bool
-    let isOffline: Bool
 
-    
+struct Services {
+    var sectionName: String
+    var sectionData: [ServiceObject]
 }
+
+struct ServiceObject {
+    var temperature: String
+    var deviceName: String
+    var roomName: String
+    var isEnable: Bool
+    var isOffline: Bool
+}
+
 class HomeViewController: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var colHeight: NSLayoutConstraint!
     @IBOutlet weak var collectionTemp: UICollectionView!
@@ -83,6 +84,7 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         collectionTemp.register(UINib(nibName: "DashboardTempCell", bundle: nil), forCellWithReuseIdentifier: "DashboardTempCell")
         servicesCollection.register(UINib(nibName: "HeaderSupplementaryView", bundle: nil), forCellWithReuseIdentifier: "HeaderSupplementaryView")
         self.collectionTemp?.register(UINib(nibName: "HeaderSupplementaryView", bundle: nil),forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,withReuseIdentifier: "HeaderSupplementaryView")
@@ -100,6 +102,8 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         }
     }
     override func viewWillAppear(_ animated: Bool) {
+        print(UIDevice.current.modelName)
+
         updateContentHeight()
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -184,8 +188,6 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
     @objc func viewTapped() {
         print("View tapped!")
         dropDown.show()
-        
-        // Add your custom logic here
     }
     func getbarButtons(image:String, setTag: Int) -> UIBarButtonItem {
         let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
@@ -196,6 +198,7 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         let barButton = UIBarButtonItem(customView: button)
         return barButton
     }
+
     // MARK: IBActions
     @objc func btnAlertTapped(sender: UIButton) {
         if sender.tag == 0 {
@@ -208,9 +211,6 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         } else {
             print("Plus")
         }
-        //        let resultVC = Utilities.viewController(name:"CPAlertViewController", onStoryboard: "Dashboard") as! CPAlertViewController
-        //        resultVC.hidesBottomBarWhenPushed = false
-        //        self.navigationController!.pushViewController(resultVC, animated: true)
     }
 }
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
@@ -235,10 +235,24 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 return HeaderSupplementaryView()
             }
             headerView.lblSectionName.text = self.temperatureData[indexPath.section].sectionName
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            print("here you can identify which section has been tapped section Number: \(indexPath.section)")
+            headerView.tag = indexPath.section
+            headerView.addGestureRecognizer(tapGesture)
+
             return headerView
         }
     }
-    
+    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+        if let view = gesture.view {
+            let tappedSection = view.tag
+            print("here you can identify which section has been tapped section Number: \(tappedSection)")
+            let resultVC = Utilities.viewController(name:"SingleRoomViewController", onStoryboard: "SingleRoom") as! SingleRoomViewController
+            resultVC.temperatureData = self.temperatureData[tappedSection]
+            resultVC.hidesBottomBarWhenPushed = true
+            self.navigationController!.pushViewController(resultVC, animated: true)
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         if collectionView == self.servicesCollection {
@@ -281,7 +295,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 cell.lblTemp.textColor = appConfig.appColors.btnInActiveTextColor
                 cell.lblRoomName.textColor = appConfig.appColors.btnInActiveTextColor
                 cell.lblDeviceName.textColor = appConfig.appColors.btnInActiveTextColor
-
             }
             cell.temperatureSwitch.isOn = self.temperatureData[indexPath.section].sectionData[indexPath.row].isEnable
             return cell
@@ -326,3 +339,19 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         self.colHeight.constant = self.collectionTemp.contentSize.height
     }
 }
+import UIKit
+
+
+extension UIDevice {
+    var modelName: String {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        return identifier
+    }
+}
+

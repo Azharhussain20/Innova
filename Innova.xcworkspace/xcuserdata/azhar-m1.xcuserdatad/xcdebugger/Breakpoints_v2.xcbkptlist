@@ -64,6 +64,21 @@
                   endingLineNumber = "206"
                   offsetFromSymbolStart = "1828">
                </Location>
+               <Location
+                  uuid = "E5EEC12D-13F5-4842-92B7-06792B8E7C5B - 9a826bf7092a09e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UILabel.applyStyle(labelFont: Swift.Optional&lt;__C.UIFont&gt;, textColor: Swift.Optional&lt;__C.UIColor&gt;, cornerRadius: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, backgroundColor: Swift.Optional&lt;__C.UIColor&gt;, borderColor: Swift.Optional&lt;__C.UIColor&gt;, borderWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: __C.NSTextAlignment) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Helper/Extensions/GlobalExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "1828">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -191,6 +206,21 @@
                   endingLineNumber = "65"
                   offsetFromSymbolStart = "1960">
                </Location>
+               <Location
+                  uuid = "4C56FAA6-362C-4BEE-B999-962D2672BAFD - d6ea2296c6843f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1960">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -270,6 +300,21 @@
                   endingLineNumber = "55"
                   offsetFromSymbolStart = "92">
                </Location>
+               <Location
+                  uuid = "BA9A6213-7BE8-454B-B5FB-FABDF32888A8 - d6ea2296c684143"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RegisterViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/Authentication/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "92">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -301,7 +346,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "tableView(_:itemsForBeginning:at:)"
+            landmarkName = "tableView(_:canMoveRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -317,7 +362,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "tableView(_:moveRowAt:to:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -364,6 +409,180 @@
                   startingLineNumber = "45"
                   endingLineNumber = "45"
                   offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "84C07086-EECB-462A-A528-A2EDFB8ECEFD - f333b21070b217e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RearrangeRoomViewController.tableView(_: __C.UITableView, moveRowAt: Foundation.IndexPath, to: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "84C07086-EECB-462A-A528-A2EDFB8ECEFD - f333b21070b217e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.RearrangeRoomViewController.tableView(_: __C.UITableView, moveRowAt: Foundation.IndexPath, to: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/HomeSettings/Controllers/RearrangeRoomViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A1B7399-AD6A-46FD-9093-B223E33D8D48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/SingleRoom/Cell/TempratureCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "btnArrowTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A1B7399-AD6A-46FD-9093-B223E33D8D48 - 78003e4c8af223bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.TempratureCell.btnArrowTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/SingleRoom/Cell/TempratureCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "8A1B7399-AD6A-46FD-9093-B223E33D8D48 - 78003e4c8af223bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.TempratureCell.btnArrowTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/SingleRoom/Cell/TempratureCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65E94CE1-8311-4AE6-99F9-0F3383AF64D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/SingleRoom/Cell/TempratureCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "btnWifiTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "65E94CE1-8311-4AE6-99F9-0F3383AF64D3 - baddde03b78b16bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.TempratureCell.btnWifiTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/SingleRoom/Cell/TempratureCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "65E94CE1-8311-4AE6-99F9-0F3383AF64D3 - baddde03b78b16bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.TempratureCell.btnWifiTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/SingleRoom/Cell/TempratureCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE648772-02BE-4838-A9E8-B0D569784595"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Innova/Modules/SingleRoom/Cell/TemperatureCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "btnTrashTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE648772-02BE-4838-A9E8-B0D569784595 - 6b01fb4da6cef1ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.TemperatureCell.btnArrowTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/SingleRoom/Cell/TemperatureCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "CE648772-02BE-4838-A9E8-B0D569784595 - 88037e6bb16f35f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.TemperatureCell.btnTrashTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/InnovaGIT/Innova/Modules/SingleRoom/Cell/TemperatureCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "252">
                </Location>
             </Locations>
          </BreakpointContent>

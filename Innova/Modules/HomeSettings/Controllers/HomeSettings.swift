@@ -18,6 +18,8 @@ class HomeSettings: BaseViewController {
     @IBOutlet weak var btnOperationMode: UIButton!
     @IBOutlet weak var anchorView: UIView!
 
+    @IBOutlet weak var btnLeaveHouse: UIButton!
+    @IBOutlet weak var btnDeleteHouse: UIButton!
     let dropDown = DropDown()
 
     let roomData: [(imageName: String, roomName: String, numberOfDevices: Int)] = [
@@ -31,10 +33,15 @@ class HomeSettings: BaseViewController {
         ("flame", "Raffrescamento"),
         ("snow", "Riscaldamento"),
     ]
-    let personData: [(userName: String, userType: String, userInitials:String)] = [
-        ("Francesco Carli", "Casa", "FC"),
-        ("Angelo Fiore", "Ufficio", "AF"),
-        ("Mario Rossi", "Aggiungi", "MR")
+    let personData: [(userName: String, userType: String, userInitials:String, Images:String)] = [
+        ("Francesco Carli", "Casa", "FC", ""),
+        ("Angelo Fiore", "Ufficio", "AF", ""),
+        ("Mario Rossi", "Aggiungi", "MR", ""),
+        ("Hazel", "Casa", "",  "InnovaOne"),
+        ("Sandy", "Ufficio", "",  "InnovaTwo"),
+        ("Jenis", "Aggiungi", "",  "InnovaThree"),
+        ("Travis", "Casa", "",  "InnovaFour"),
+        ("Gabriel", "Ufficio", "",  "InnovaFive"),
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +55,11 @@ class HomeSettings: BaseViewController {
         self.tblHeight.constant = CGFloat(self.roomData.count) * 60.0
         self.tblPersonHeight.constant = CGFloat(self.personData.count) * 60.0
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         self.configurationOperationMode()
     }
+    
     func configurationOperationMode(){
         dropDown.anchorView = self.anchorView // UIView or UIBarButtonItem
         dropDown.topOffset = CGPoint(x: 0, y: (dropDown.anchorView?.plainView.bounds.height)!)
@@ -79,18 +88,26 @@ class HomeSettings: BaseViewController {
         DropDown.appearance().backgroundColor = UIColor.white
         DropDown.appearance().cellHeight = 40.0
         DropDown.startListeningToKeyboard()
-
     }
+    
+    @IBAction func btnDeleteHouseTapped(_ sender: UIButton) {
+        self.popAlert(title: "Elimina la casa", message: "Dato che sei il proprietario di questa casa, eliminando questa abitazione tutti i dati relativi ad essa verranno persi. Questa azione è irreversibile. Continuare?", secondButttonName: "Elimina casa")
+    }
+
+    @IBAction func btnLeaveHouseTapped(_ sender: UIButton) { 
+        self.popAlert(title: "Lascia questa casa", message: "Dato che sei il proprietario di questa casa, eliminando questa abitazione tutti i dati relativi ad essa verranno persi. Questa azione è irreversibile. Continuare?", secondButttonName: "Lascia casa")
+    }
+
     @IBAction func btnEditName(_ sender: UIButton) {
         let initiliazeVC : EditNameViewController = Utilities.viewController(name: "EditNameViewController", onStoryboard: "Settings") as! EditNameViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
         self.navigationController!.pushViewController(initiliazeVC, animated: true)
     }
+    
     @IBAction func btnEditPosition(_ sender: UIButton) {
         let initiliazeVC : EditPositionViewController = Utilities.viewController(name: "EditPositionViewController", onStoryboard: "Settings") as! EditPositionViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
         self.navigationController!.pushViewController(initiliazeVC, animated: true)
-
     }
     
     @IBAction func btnDropDown(_ sender: UIButton) {
@@ -102,12 +119,38 @@ class HomeSettings: BaseViewController {
         let initiliazeVC : RearrangeRoomViewController = Utilities.viewController(name: "RearrangeRoomViewController", onStoryboard: "Settings") as! RearrangeRoomViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
         self.navigationController!.pushViewController(initiliazeVC, animated: true)
-
     }
+    
     @IBAction func btnAddRoom(_ sender: UIButton) {
         let initiliazeVC : AddRoomViewController = Utilities.viewController(name: "AddRoomViewController", onStoryboard: "Rooms") as! AddRoomViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
         self.navigationController!.pushViewController(initiliazeVC, animated: true)
+    }
+    
+    func popAlert(title:String, message:String, secondButttonName:String){
+        showAlert(
+            title: title,
+            message: message,
+            type: .twoButtons(
+                button1: (
+                    title: "Annulla",
+                    style: .default,
+                    handler: {
+                        // Handle the Cancel button tap action
+                        print("Annulla button tapped")
+                        AppInstance._navigation.popViewController(animated: true)
+                    }
+                ),
+                button2: (
+                    title: secondButttonName,
+                    style: .default,
+                    handler: {
+                        AppInstance.gotoDashboard(transition: true)
+                    }
+                )
+            ),
+            viewController: self
+        )
     }
     
 }
@@ -126,14 +169,18 @@ extension HomeSettings : UITableViewDelegate, UITableViewDataSource {
             }
             return cell
         } else {
-            let cell : DeviceCell = self.tblRoomsType.dequeueReusableCell(withIdentifier: "DeviceCell") as! DeviceCell
+            let cell : DeviceCell = self.tblPersons.dequeueReusableCell(withIdentifier: "DeviceCell") as! DeviceCell
             cell.lblDeviceName.text = self.personData[indexPath.row].userName
             cell.lblDeviceType.text = self.personData[indexPath.row].userType
-            if let image = imageWithText(self.personData[indexPath.row].userInitials) {
-                cell.imgDeviceIcon.image = image
-                cell.imgDeviceIcon.backgroundColor = appConfig.appColors.btnInActiveView
-                cell.imgDeviceIcon.layer.cornerRadius = 15.0
+            if self.personData[indexPath.row].Images == "" {
+                if let image = imageWithText(self.personData[indexPath.row].userInitials) {
+                    cell.imgDeviceIcon.image = image
+                }
+            } else {
+                cell.imgDeviceIcon.image = UIImage(named: self.personData[indexPath.row].Images)
             }
+            cell.imgDeviceIcon.backgroundColor = appConfig.appColors.btnInActiveView
+            cell.imgDeviceIcon.layer.cornerRadius = 18.0
 
             if indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
                 cell.seperator.isHidden = true

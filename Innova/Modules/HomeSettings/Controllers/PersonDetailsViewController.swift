@@ -9,8 +9,19 @@ import UIKit
 
 class PersonDetailsViewController: BaseViewController {
 
+    @IBOutlet weak var btnTransferProperty: GreenBordered!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addTapToDismissKeyboard()
+        self.configurationTitleAndBack(title: "Persone", imageName: "chevron.left")
+        self.backTapped = {
+            self.navigationController?.popViewController(animated: true)
+        }
+        self.btnTransferProperty.touchUpInside = {
+            let initiliazeVC : TransferPropertyViewController = Utilities.viewController(name: "TransferPropertyViewController", onStoryboard: "Settings") as! TransferPropertyViewController
+            self.navigationController!.pushViewController(initiliazeVC, animated: true)
+
+        }
 
         // Do any additional setup after loading the view.
     }

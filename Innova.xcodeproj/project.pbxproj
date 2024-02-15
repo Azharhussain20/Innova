@@ -79,6 +79,11 @@
 		CB33F6162B6CBCBF0091CDC9 /* OperationModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33F6142B6CBCBF0091CDC9 /* OperationModeCell.swift */; };
 		CB33F6172B6CBCBF0091CDC9 /* OperationModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB33F6152B6CBCBF0091CDC9 /* OperationModeCell.xib */; };
 		CB33F6192B6CEB770091CDC9 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33F6182B6CEB770091CDC9 /* PersonDetailsViewController.swift */; };
+		CB3F84E12B7C9D4400BA164D /* TemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3F84DF2B7C9D4400BA164D /* TemperatureCell.swift */; };
+		CB3F84E22B7C9D4400BA164D /* TemperatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3F84E02B7C9D4400BA164D /* TemperatureCell.xib */; };
+		CB3F84E42B7CD65F00BA164D /* MoveDeviceToRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3F84E32B7CD65F00BA164D /* MoveDeviceToRoomViewController.swift */; };
+		CB3F84E72B7CDD2600BA164D /* MoveStepsForDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3F84E52B7CDD2600BA164D /* MoveStepsForDevice.swift */; };
+		CB3F84E82B7CDD2600BA164D /* MoveStepsForDevice.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3F84E62B7CDD2600BA164D /* MoveStepsForDevice.xib */; };
 		CB49F2582B6B68C600FBE709 /* HeaderSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49F2562B6B68C600FBE709 /* HeaderSupplementaryView.swift */; };
 		CB49F2592B6B68C600FBE709 /* HeaderSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB49F2572B6B68C600FBE709 /* HeaderSupplementaryView.xib */; };
 		CB49F2602B6B88E100FBE709 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB49F25F2B6B88E100FBE709 /* Settings.storyboard */; };
@@ -94,6 +99,11 @@
 		CB653E6F2B6A4BBE005563B8 /* HouseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB653E6D2B6A4BBD005563B8 /* HouseCell.xib */; };
 		CB653E7A2B6A69A7005563B8 /* DashboardTempCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB653E782B6A69A7005563B8 /* DashboardTempCell.swift */; };
 		CB653E7B2B6A69A7005563B8 /* DashboardTempCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB653E792B6A69A7005563B8 /* DashboardTempCell.xib */; };
+		CB6CDA452B74DFD100219575 /* TransferPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CDA442B74DFD100219575 /* TransferPropertyViewController.swift */; };
+		CBA3FA5C2B7B817E00C9DA61 /* TransferSucceededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3FA5B2B7B817E00C9DA61 /* TransferSucceededViewController.swift */; };
+		CBA3FA632B7B8A1800C9DA61 /* SingleRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA3FA622B7B8A1800C9DA61 /* SingleRoom.storyboard */; };
+		CBA3FA652B7B9DA900C9DA61 /* SingleRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3FA642B7B9DA900C9DA61 /* SingleRoomViewController.swift */; };
+		CBC392282B725CBE00F50869 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC392272B725CBE00F50869 /* schema.json */; };
 		CBCB0DB92B6233C600F300F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCB0DB82B6233C600F300F2 /* LoginViewController.swift */; };
 		CBCB0DBF2B62455700F300F2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCB0DBE2B62455700F300F2 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -173,6 +183,11 @@
 		CB33F6142B6CBCBF0091CDC9 /* OperationModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationModeCell.swift; sourceTree = "<group>"; };
 		CB33F6152B6CBCBF0091CDC9 /* OperationModeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperationModeCell.xib; sourceTree = "<group>"; };
 		CB33F6182B6CEB770091CDC9 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		CB3F84DF2B7C9D4400BA164D /* TemperatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCell.swift; sourceTree = "<group>"; };
+		CB3F84E02B7C9D4400BA164D /* TemperatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureCell.xib; sourceTree = "<group>"; };
+		CB3F84E32B7CD65F00BA164D /* MoveDeviceToRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDeviceToRoomViewController.swift; sourceTree = "<group>"; };
+		CB3F84E52B7CDD2600BA164D /* MoveStepsForDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveStepsForDevice.swift; sourceTree = "<group>"; };
+		CB3F84E62B7CDD2600BA164D /* MoveStepsForDevice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveStepsForDevice.xib; sourceTree = "<group>"; };
 		CB49F2562B6B68C600FBE709 /* HeaderSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSupplementaryView.swift; sourceTree = "<group>"; };
 		CB49F2572B6B68C600FBE709 /* HeaderSupplementaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSupplementaryView.xib; sourceTree = "<group>"; };
 		CB49F25F2B6B88E100FBE709 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -188,6 +203,11 @@
 		CB653E6D2B6A4BBD005563B8 /* HouseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseCell.xib; sourceTree = "<group>"; };
 		CB653E782B6A69A7005563B8 /* DashboardTempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTempCell.swift; sourceTree = "<group>"; };
 		CB653E792B6A69A7005563B8 /* DashboardTempCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTempCell.xib; sourceTree = "<group>"; };
+		CB6CDA442B74DFD100219575 /* TransferPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPropertyViewController.swift; sourceTree = "<group>"; };
+		CBA3FA5B2B7B817E00C9DA61 /* TransferSucceededViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSucceededViewController.swift; sourceTree = "<group>"; };
+		CBA3FA622B7B8A1800C9DA61 /* SingleRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleRoom.storyboard; sourceTree = "<group>"; };
+		CBA3FA642B7B9DA900C9DA61 /* SingleRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRoomViewController.swift; sourceTree = "<group>"; };
+		CBC392272B725CBE00F50869 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		CBCB0DB82B6233C600F300F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CBCB0DBE2B62455700F300F2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD4A02CCEB962AA655091541 /* Pods_Innova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Innova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -372,6 +392,7 @@
 				CB1396162B626CB300CF4196 /* HelveticaNeueLt.ttf */,
 				CB13960E2B626CB300CF4196 /* HelveticaNeueMed.ttf */,
 				CB303C352B60FC3B00B9A770 /* AppDelegate.swift */,
+				CBC392272B725CBE00F50869 /* schema.json */,
 				CB303C872B611AAC00B9A770 /* Modules */,
 				CB303C4C2B61148A00B9A770 /* Helper */,
 				CB303C4B2B61146F00B9A770 /* Resources */,
@@ -474,6 +495,7 @@
 		CB303C872B611AAC00B9A770 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBA3FA5D2B7B883D00C9DA61 /* SingleRoom */,
 				CB49F25A2B6B88B000FBE709 /* HomeSettings */,
 				CB303C8B2B611B5A00B9A770 /* Device */,
 				CB303C8A2B611B3000B9A770 /* Rooms */,
@@ -602,6 +624,8 @@
 				CB49F2652B6BB4FE00FBE709 /* EditPositionViewController.swift */,
 				CB49F2672B6BBF4F00FBE709 /* RearrangeRoomViewController.swift */,
 				CB33F6182B6CEB770091CDC9 /* PersonDetailsViewController.swift */,
+				CB6CDA442B74DFD100219575 /* TransferPropertyViewController.swift */,
+				CBA3FA5B2B7B817E00C9DA61 /* TransferSucceededViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -622,6 +646,52 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA3FA5D2B7B883D00C9DA61 /* SingleRoom */ = {
+			isa = PBXGroup;
+			children = (
+				CBA3FA612B7B885A00C9DA61 /* Controller */,
+				CBA3FA602B7B885600C9DA61 /* Cell */,
+				CBA3FA5F2B7B885000C9DA61 /* View */,
+				CBA3FA5E2B7B884A00C9DA61 /* Model */,
+			);
+			path = SingleRoom;
+			sourceTree = "<group>";
+		};
+		CBA3FA5E2B7B884A00C9DA61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA3FA5F2B7B885000C9DA61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBA3FA622B7B8A1800C9DA61 /* SingleRoom.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA3FA602B7B885600C9DA61 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB3F84DF2B7C9D4400BA164D /* TemperatureCell.swift */,
+				CB3F84E02B7C9D4400BA164D /* TemperatureCell.xib */,
+				CB3F84E52B7CDD2600BA164D /* MoveStepsForDevice.swift */,
+				CB3F84E62B7CDD2600BA164D /* MoveStepsForDevice.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CBA3FA612B7B885A00C9DA61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBA3FA642B7B9DA900C9DA61 /* SingleRoomViewController.swift */,
+				CB3F84E32B7CD65F00BA164D /* MoveDeviceToRoomViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E3D699E5875B85A42072CB97 /* Pods */ = {
@@ -709,13 +779,17 @@
 				CB262F442B690A7700FD2E3A /* Device.storyboard in Resources */,
 				CB653E7B2B6A69A7005563B8 /* DashboardTempCell.xib in Resources */,
 				CB1396232B626CB300CF4196 /* HelveticaNeueHv.ttf in Resources */,
+				CBC392282B725CBE00F50869 /* schema.json in Resources */,
 				CB303C422B60FC3D00B9A770 /* LaunchScreen.storyboard in Resources */,
+				CB3F84E22B7C9D4400BA164D /* TemperatureCell.xib in Resources */,
 				CB49F2602B6B88E100FBE709 /* Settings.storyboard in Resources */,
+				CBA3FA632B7B8A1800C9DA61 /* SingleRoom.storyboard in Resources */,
 				CB303CAC2B613C1400B9A770 /* IntroductionCell.xib in Resources */,
 				CB262F322B68E1EE00FD2E3A /* customDropDownCell.xib in Resources */,
 				CB1396192B626CB300CF4196 /* HelveticaNeueMed.ttf in Resources */,
 				CB13961D2B626CB300CF4196 /* HelveticaNeue BlackCond.ttf in Resources */,
 				CB2BC0D42B6A167F004A5226 /* SuggestionsCell.xib in Resources */,
+				CB3F84E82B7CDD2600BA164D /* MoveStepsForDevice.xib in Resources */,
 				CB653E6F2B6A4BBE005563B8 /* HouseCell.xib in Resources */,
 				CB303C962B6120F400B9A770 /* Localizable.strings in Resources */,
 				CB303C3F2B60FC3D00B9A770 /* Assets.xcassets in Resources */,
@@ -779,6 +853,7 @@
 				CB303C642B61187100B9A770 /* Utilities.swift in Sources */,
 				CB262F382B68FD0300FD2E3A /* GreenBackGroundPlus.swift in Sources */,
 				CB262F2A2B68C8D500FD2E3A /* HomeViewController.swift in Sources */,
+				CBA3FA652B7B9DA900C9DA61 /* SingleRoomViewController.swift in Sources */,
 				CB303C6E2B61191B00B9A770 /* Colors.swift in Sources */,
 				CB653E692B6A1E1F005563B8 /* RoomAddedSuccesfully.swift in Sources */,
 				CB262F3A2B68FDD700FD2E3A /* GreenBordered.swift in Sources */,
@@ -794,12 +869,15 @@
 				CB303C862B611A4400B9A770 /* BaseViewController.swift in Sources */,
 				CB262F462B690A8600FD2E3A /* AddDeviceViewController.swift in Sources */,
 				CB303C732B61195D00B9A770 /* TTGSnackbarConfig.swift in Sources */,
+				CB3F84E42B7CD65F00BA164D /* MoveDeviceToRoomViewController.swift in Sources */,
+				CB6CDA452B74DFD100219575 /* TransferPropertyViewController.swift in Sources */,
 				CB303C9F2B61249800B9A770 /* GreenThemeButton.swift in Sources */,
 				CB49F26B2B6BCEF000FBE709 /* RearrangeRoomTableCell.swift in Sources */,
 				CB2BC0D32B6A167F004A5226 /* SuggestionsCell.swift in Sources */,
 				CB49F2662B6BB4FE00FBE709 /* EditPositionViewController.swift in Sources */,
 				CB303C5C2B6117A200B9A770 /* TimerServices.swift in Sources */,
 				CB262F202B68C2DA00FD2E3A /* LocationAccessPermission.swift in Sources */,
+				CB3F84E72B7CDD2600BA164D /* MoveStepsForDevice.swift in Sources */,
 				CBCB0DB92B6233C600F300F2 /* LoginViewController.swift in Sources */,
 				CB303CA12B612A1300B9A770 /* WhiteButtonWithImage.swift in Sources */,
 				CB303C752B61196F00B9A770 /* GlobalExtensions.swift in Sources */,
@@ -832,6 +910,8 @@
 				CBCB0DBF2B62455700F300F2 /* RegisterViewController.swift in Sources */,
 				CB262F492B69107A00FD2E3A /* DeviceCell.swift in Sources */,
 				CB303C682B6118D000B9A770 /* AppConstant.swift in Sources */,
+				CBA3FA5C2B7B817E00C9DA61 /* TransferSucceededViewController.swift in Sources */,
+				CB3F84E12B7C9D4400BA164D /* TemperatureCell.swift in Sources */,
 				CB303CA72B613B0C00B9A770 /* PlainTextButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,13 @@
 PODS:
   - Alamofire (5.8.1)
+  - Apollo (1.9.0):
+    - Apollo/Core (= 1.9.0)
+  - Apollo/Core (1.9.0)
+  - Apollo/SQLite (1.9.0):
+    - Apollo/Core
+    - SQLite.swift (~> 0.13.1)
+  - Apollo/WebSocket (1.9.0):
+    - Apollo/Core
   - AppAuth (1.6.2):
     - AppAuth/Core (= 1.6.2)
     - AppAuth/ExternalUserAgent (= 1.6.2)
@@ -135,6 +143,9 @@ PODS:
   - PromisesObjC (2.3.1)
   - PromisesSwift (2.3.1):
     - PromisesObjC (= 2.3.1)
+  - SQLite.swift (0.13.3):
+    - SQLite.swift/standard (= 0.13.3)
+  - SQLite.swift/standard (0.13.3)
   - SwiftDate (7.0.0)
   - SwiftMessages (9.0.9):
     - SwiftMessages/App (= 9.0.9)
@@ -145,6 +156,9 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Apollo
+  - Apollo/SQLite
+  - Apollo/WebSocket
   - DropDown
   - Firebase/Core
   - Firebase/Crashlytics
@@ -161,6 +175,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Apollo
     - AppAuth
     - DropDown
     - Firebase
@@ -183,6 +198,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - PromisesSwift
+    - SQLite.swift
     - SwiftDate
     - SwiftMessages
     - SwiftyJSON
@@ -200,6 +216,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  Apollo: b917452d3e05452c080e18cdb8ad45a74d484979
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   Firebase: f4ac0b02927af9253ae094d23deecf0890da7374
@@ -222,12 +239,13 @@ SPEC CHECKSUMS:
   nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   PromisesSwift: 28dca69a9c40779916ac2d6985a0192a5cb4a265
+  SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
   SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
   SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TTGSnackbar: fea91c62637b5662f808a4c3b55f7631cb7e1ef7
   UIDrawer: 1bfbc152fee69f6809a41508000cf1b9bd4b1738
 
-PODFILE CHECKSUM: a2dbbd0b3ac19e636e95b61093cd95ecd8a918c7
+PODFILE CHECKSUM: 3f60d3f05df65d37c490846c737f7536d0941d54
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.15.2
