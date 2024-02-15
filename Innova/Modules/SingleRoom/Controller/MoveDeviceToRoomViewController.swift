@@ -40,7 +40,7 @@ class MoveDeviceToRoomViewController: BaseViewController {
         }
     }
     @IBAction func moveToAnotherRoomSwitch(_ sender: UISwitch) {
-        if self.moveToAnotherRoomView.isOn {
+        if sender.isOn {
             
         } else {
             

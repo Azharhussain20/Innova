@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppInstance = self
         self.window = UIWindow(frame:UIScreen.main.bounds)
         self.gotoDashboard(transition: true)
+        self.initailizeIQKeyboard()
         return true
     }
     //MARK: - Keyboard Init methods -

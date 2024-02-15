@@ -13,6 +13,9 @@
 		9E4DEA272B637156004F1A63 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DEA262B637156004F1A63 /* ForgotPasswordViewController.swift */; };
 		9E68C0382B6694A200314F84 /* CreateHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E68C0372B6694A200314F84 /* CreateHome.swift */; };
 		9E68C03A2B669C4500314F84 /* InvteByQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E68C0392B669C4500314F84 /* InvteByQRViewController.swift */; };
+		C196E4492B7CE97800BB89DC /* AddDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196E4482B7CE97800BB89DC /* AddDeviceController.swift */; };
+		C196E44F2B7CF00100BB89DC /* AddDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C196E44E2B7CF00100BB89DC /* AddDevices.storyboard */; };
+		C196E4512B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196E4502B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift */; };
 		CB1396192B626CB300CF4196 /* HelveticaNeueMed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB13960E2B626CB300CF4196 /* HelveticaNeueMed.ttf */; };
 		CB13961A2B626CB300CF4196 /* HelveticaNeue Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB13960F2B626CB300CF4196 /* HelveticaNeue Medium.ttf */; };
 		CB13961B2B626CB300CF4196 /* HelveticaNeueBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB1396102B626CB300CF4196 /* HelveticaNeueBd.ttf */; };
@@ -115,6 +118,9 @@
 		9E4DEA262B637156004F1A63 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		9E68C0372B6694A200314F84 /* CreateHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHome.swift; sourceTree = "<group>"; };
 		9E68C0392B669C4500314F84 /* InvteByQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvteByQRViewController.swift; sourceTree = "<group>"; };
+		C196E4482B7CE97800BB89DC /* AddDeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceController.swift; sourceTree = "<group>"; };
+		C196E44E2B7CF00100BB89DC /* AddDevices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDevices.storyboard; sourceTree = "<group>"; };
+		C196E4502B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTextBorderlessButton.swift; sourceTree = "<group>"; };
 		CB13960E2B626CB300CF4196 /* HelveticaNeueMed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueMed.ttf; sourceTree = "<group>"; };
 		CB13960F2B626CB300CF4196 /* HelveticaNeue Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue Medium.ttf"; sourceTree = "<group>"; };
 		CB1396102B626CB300CF4196 /* HelveticaNeueBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueBd.ttf; sourceTree = "<group>"; };
@@ -234,6 +240,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C196E44A2B7CEFAF00BB89DC /* AddDevice */ = {
+			isa = PBXGroup;
+			children = (
+				C196E44D2B7CEFDB00BB89DC /* Controllers */,
+				C196E44C2B7CEFD500BB89DC /* Views */,
+				C196E44B2B7CEFCB00BB89DC /* Cell */,
+			);
+			path = AddDevice;
+			sourceTree = "<group>";
+		};
+		C196E44B2B7CEFCB00BB89DC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C196E44C2B7CEFD500BB89DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C196E44E2B7CF00100BB89DC /* AddDevices.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C196E44D2B7CEFDB00BB89DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C196E4482B7CE97800BB89DC /* AddDeviceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CB262F212B68C7D900FD2E3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +327,7 @@
 				CB262F1D2B68B87D00FD2E3A /* GreenBorderWithArrow.swift */,
 				CB262F372B68FD0300FD2E3A /* GreenBackGroundPlus.swift */,
 				CB262F392B68FDD700FD2E3A /* GreenBordered.swift */,
+				C196E4502B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift */,
 			);
 			path = CommonButtons;
 			sourceTree = "<group>";
@@ -497,6 +537,7 @@
 			children = (
 				CBA3FA5D2B7B883D00C9DA61 /* SingleRoom */,
 				CB49F25A2B6B88B000FBE709 /* HomeSettings */,
+				C196E44A2B7CEFAF00BB89DC /* AddDevice */,
 				CB303C8B2B611B5A00B9A770 /* Device */,
 				CB303C8A2B611B3000B9A770 /* Rooms */,
 				CB303C892B611AED00B9A770 /* Dashboard */,
@@ -763,6 +804,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C196E44F2B7CF00100BB89DC /* AddDevices.storyboard in Resources */,
 				CB13961F2B626CB300CF4196 /* Helvetica Neu Bold.ttf in Resources */,
 				CB33F6172B6CBCBF0091CDC9 /* OperationModeCell.xib in Resources */,
 				CB2BC0CE2B6A1515004A5226 /* Rooms.storyboard in Resources */,
@@ -858,6 +900,7 @@
 				CB653E692B6A1E1F005563B8 /* RoomAddedSuccesfully.swift in Sources */,
 				CB262F3A2B68FDD700FD2E3A /* GreenBordered.swift in Sources */,
 				CB262F352B68EEF600FD2E3A /* ServiceCell.swift in Sources */,
+				C196E4512B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift in Sources */,
 				CB262F3E2B69008100FD2E3A /* ActivateBluetootheController.swift in Sources */,
 				9E68C0382B6694A200314F84 /* CreateHome.swift in Sources */,
 				CB653E7A2B6A69A7005563B8 /* DashboardTempCell.swift in Sources */,
@@ -879,6 +922,7 @@
 				CB262F202B68C2DA00FD2E3A /* LocationAccessPermission.swift in Sources */,
 				CB3F84E72B7CDD2600BA164D /* MoveStepsForDevice.swift in Sources */,
 				CBCB0DB92B6233C600F300F2 /* LoginViewController.swift in Sources */,
+				C196E4492B7CE97800BB89DC /* AddDeviceController.swift in Sources */,
 				CB303CA12B612A1300B9A770 /* WhiteButtonWithImage.swift in Sources */,
 				CB303C752B61196F00B9A770 /* GlobalExtensions.swift in Sources */,
 				9E2C784E2B66A0870007A26B /* Alerts.swift in Sources */,

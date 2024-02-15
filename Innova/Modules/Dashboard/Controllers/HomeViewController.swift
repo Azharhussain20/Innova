@@ -98,7 +98,10 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
             self.navigationController!.pushViewController(initiliazeVC, animated: true)
         }
         btnAddDevice.touchUpInside = {
-            self.popupAlert()
+            let initiliazeVC : AddDeviceController = Utilities.viewController(name: "AddDeviceController", onStoryboard: "AddDevices") as! AddDeviceController
+            initiliazeVC.hidesBottomBarWhenPushed = true
+            self.navigationController!.pushViewController(initiliazeVC, animated: true)
+
         }
     }
     override func viewWillAppear(_ animated: Bool) {
