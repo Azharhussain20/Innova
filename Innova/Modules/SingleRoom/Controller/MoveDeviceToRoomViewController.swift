@@ -14,6 +14,8 @@ class MoveDeviceToRoomViewController: BaseViewController {
     @IBOutlet weak var moveToAnotherRoomView: UIView!
     @IBOutlet weak var doNotPairView: UIView!
     @IBOutlet weak var colSteps: UICollectionView!
+    @IBOutlet weak var moveToAnotherRooms: UISwitch!
+    @IBOutlet weak var doNotPair: UISwitch!
     let flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 0
@@ -38,8 +40,13 @@ class MoveDeviceToRoomViewController: BaseViewController {
         }
     }
     @IBAction func moveToAnotherRoomSwitch(_ sender: UISwitch) {
-        
+        if self.moveToAnotherRoomView.isOn {
+            
+        } else {
+            
+        }
     }
+    
     
     @IBAction func doNotPairSwitch(_ sender: UISwitch) {
         

@@ -356,8 +356,10 @@ a nessuna stanza</string>
                     </view>
                     <connections>
                         <outlet property="colSteps" destination="ZH7-Qr-qZ7" id="Ud2-Gn-yb8"/>
+                        <outlet property="doNotPair" destination="qxT-B3-c9x" id="utg-1j-S6i"/>
                         <outlet property="doNotPairView" destination="Lnx-qD-N1L" id="F6b-tH-aWC"/>
                         <outlet property="moveToAnotherRoomView" destination="ukU-bp-yWp" id="ZgU-Pt-lee"/>
+                        <outlet property="moveToAnotherRooms" destination="dkB-H9-exA" id="U9j-eN-32A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjN-I2-JYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
